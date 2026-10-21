@@ -7,6 +7,7 @@ Sabino Day in cream, Sabino Night in canyon green, switching with your device.
 
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5?style=flat-square)](https://hacs.xyz/docs/faq/custom_repositories/)
 [![Release](https://img.shields.io/github/v/release/Catalina-Automation/sabino-ha?style=flat-square&label=release)](https://github.com/Catalina-Automation/sabino-ha/releases)
+[![Stars](https://img.shields.io/github/stars/Catalina-Automation/sabino-ha?style=flat-square)](https://github.com/Catalina-Automation/sabino-ha/stargazers)
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2026.10-18BCF2?style=flat-square)](https://www.home-assistant.io/)
 [![License](https://img.shields.io/github/license/Catalina-Automation/sabino-ha?style=flat-square)](https://github.com/Catalina-Automation/sabino-ha/blob/main/LICENSE)
 
