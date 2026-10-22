@@ -3,7 +3,7 @@
 # Sabino for Home Assistant
 
 **A quiet Sonoran theme for Home Assistant**, by [Catalina Automation](https://usecatalina.ai).
-Sabino Day in cream, Sabino Night in canyon green, switching with your device.
+Sabino Day in canyon sand, Sabino Night in canyon green, switching with your device.
 
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5?style=flat-square)](https://hacs.xyz/docs/faq/custom_repositories/)
 [![Release](https://img.shields.io/github/v/release/Catalina-Automation/sabino-ha?style=flat-square&label=release)](https://github.com/Catalina-Automation/sabino-ha/releases)
@@ -39,8 +39,8 @@ Nothing else gets to be loud.
 
 <table>
   <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/Catalina-Automation/sabino-ha/main/images/day.webp" alt="Sabino Day"><br><sub><b>Sabino Day</b> · cream surfaces, clay and gold accents</sub></td>
-    <td width="50%"><img src="https://raw.githubusercontent.com/Catalina-Automation/sabino-ha/main/images/night.webp" alt="Sabino Night"><br><sub><b>Sabino Night</b> · canyon green surfaces, cream text</sub></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/Catalina-Automation/sabino-ha/main/images/day.webp" alt="Sabino Day"><br><sub><b>Sabino Day</b> · canyon sand surfaces, clay and gold accents</sub></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/Catalina-Automation/sabino-ha/main/images/night.webp" alt="Sabino Night"><br><sub><b>Sabino Night</b> · canyon green surfaces, sand text</sub></td>
   </tr>
 </table>
 

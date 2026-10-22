@@ -710,7 +710,7 @@ Sabino:
 
     dark:
       # Same token/alias/mapping names as light; only the values below differ.
-      # Sabino Night palette (deep green surfaces, cream text, gold brand/accent),
+      # Sabino Night palette (deep green surfaces, sand text, gold brand/accent),
       # with shadows tinted by Sabino's own shadow color #142016.
       clay-50: "#14201A"
       clay-100: "#33241F"
