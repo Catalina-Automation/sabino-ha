@@ -114,3 +114,7 @@ version, so browsers don't keep the old copy.
 ## License
 
 GPL-3.0-or-later. See [LICENSE](LICENSE).
+
+"Sabino" and "Catalina Automation" are trademarks of Catalina Automation LLC and
+aren't covered by the GPL: modified versions need a different name. See
+[NOTICE](NOTICE). The fonts are under the SIL Open Font License.

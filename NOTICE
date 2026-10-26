@@ -1,0 +1,26 @@
+Sabino for Home Assistant
+Copyright (C) 2026 Catalina Automation LLC
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version. It is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See LICENSE for the full text.
+
+Trademarks
+----------
+
+"Sabino", "Sabino Day", "Sabino Night" and "Catalina Automation" are trademarks
+of Catalina Automation LLC. The GPL covers the files in this repository, not
+these names: as section 7(e) of the license allows, it grants no right to use
+them. You may say that your work is based on Sabino. You may not name, brand or
+promote a modified version, or any other product, as Sabino or as coming from
+Catalina Automation. Give modified versions a different name.
+
+Fonts
+-----
+
+The font files in fonts/, and the copies embedded in fonts/sabino-fonts.js, are
+not covered by the GPL. They are licensed under the SIL Open Font License 1.1;
+see fonts/licenses/.
