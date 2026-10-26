@@ -5,8 +5,9 @@
 # mode follows the device light/dark setting.
 # Raw token NAMES are kept (clay/sage/agave/dusk/bloom/sand/ink) so existing
 # dashboard styles (var(--brand), var(--sand-200), ...) keep working.
-# Fonts are Google Fonts substitutes (Newsreader / Hanken Grotesk / JetBrains Mono), loaded via @import
-# below.
+# Fonts are Newsreader / Hanken Grotesk / JetBrains Mono. The theme names them but does not load
+# them: add fonts/sabino-fonts.js as a dashboard resource (see README). A theme can only carry CSS
+# inside card-mod's shadow root, where Chromium ignores @font-face and @import.
 Sabino:
   card-mod-theme: Sabino
   modes:
@@ -695,9 +696,8 @@ Sabino:
       bubble-sub-button-dark-text-color: var(--ink-900)
       bubble-sub-button-light-text-color: var(--clay-50)
 
-      # ---- Font import + legacy paper-font overrides ----
+      # ---- Legacy paper-font overrides ----
       card-mod-root: |
-        @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
         :host {
           --paper-font-common-base: 400 14px 'Hanken Grotesk', sans-serif !important;
           --paper-font-body1: 400 14px 'Hanken Grotesk', sans-serif !important;
@@ -1392,7 +1392,6 @@ Sabino:
       bubble-sub-button-light-text-color: var(--ink-900)
 
       card-mod-root: |
-        @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
         :host {
           --paper-font-common-base: 400 14px 'Hanken Grotesk', sans-serif !important;
           --paper-font-body1: 400 14px 'Hanken Grotesk', sans-serif !important;

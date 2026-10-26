@@ -5,7 +5,7 @@
 **A quiet Sonoran theme for Home Assistant**, by [Catalina Automation](https://usecatalina.ai).
 Sabino Day in canyon sand, Sabino Night in canyon green, switching with your device.
 
-[![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5?style=flat-square)](https://hacs.xyz/docs/faq/custom_repositories/)
+[![HACS Default](https://img.shields.io/badge/HACS-Default-41BDF5?style=flat-square)](https://hacs.xyz/)
 [![Release](https://img.shields.io/github/v/release/Catalina-Automation/sabino-ha?style=flat-square&label=release)](https://github.com/Catalina-Automation/sabino-ha/releases)
 [![Stars](https://img.shields.io/github/stars/Catalina-Automation/sabino-ha?style=flat-square)](https://github.com/Catalina-Automation/sabino-ha/stargazers)
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2026.10-18BCF2?style=flat-square)](https://www.home-assistant.io/)
@@ -50,12 +50,8 @@ Nothing else gets to be loud.
 
 [![Open your Home Assistant instance and open this repository in HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Catalina-Automation&repository=sabino-ha&category=theme)
 
-Or by hand:
-
-1. Open **HACS** in Home Assistant.
-2. Open the menu (⋮, top right) and choose **Custom repositories**.
-3. Add `https://github.com/Catalina-Automation/sabino-ha` with type **Theme**.
-4. Search for **Sabino**, open it and choose **Download**.
+Or open **HACS** in Home Assistant, search for **Sabino**, open it and choose
+**Download**. Sabino is in HACS's default list, so there's no repository to add.
 
 <details>
 <summary>Manual download (without HACS)</summary>
@@ -88,12 +84,30 @@ follow your device. Choose Light or Dark to pin one.
 To make Sabino the default for everyone, call `frontend.set_theme` with
 `name: Sabino` twice, once with `mode: light` and once with `mode: dark`.
 
+### 4. Add the fonts
+
+The theme names its fonts but can't load them itself, so add them once as a
+dashboard resource. Skip this and everything still works, in Home Assistant's
+default font.
+
+1. Download [`sabino-fonts.js`](https://github.com/Catalina-Automation/sabino-ha/releases/latest/download/sabino-fonts.js)
+   and put it in your config's `www/` folder, so it's at `/config/www/sabino-fonts.js`.
+2. **Settings › Dashboards › ⋮ › Resources › Add resource.** Enter the URL
+   `/local/sabino-fonts.js?v=1.0.1` and choose **JavaScript module**.
+3. Reload the page. On the phone app, pull to refresh once.
+
+When a release updates the fonts, replace the file and change `?v=` to the new
+version, so browsers don't keep the old copy.
+
 ## Fonts and cards
 
-- **Fonts** load from Google Fonts through
-  [card-mod](https://github.com/thomasloven/lovelace-card-mod). Without card-mod, or
-  without internet access, the colors still apply and text uses Home Assistant's
-  default font.
+- **Fonts** come from `sabino-fonts.js` ([step 4](#4-add-the-fonts)): Newsreader,
+  Hanken Grotesk and JetBrains Mono, embedded so they load offline and show up
+  reliably when the phone app opens. They're latin subsets under the
+  [SIL Open Font License](fonts/licenses/); other alphabets use your system's fonts.
+  More in [`fonts/`](fonts/README.md).
+- **[card-mod](https://github.com/thomasloven/lovelace-card-mod)** is optional. With
+  it, a few older Home Assistant text styles pick up the Sabino fonts as well.
 - **[Bubble Card](https://github.com/Clooos/Bubble-Card)** is optional. If you use it,
   it picks up the theme on its own.
 
