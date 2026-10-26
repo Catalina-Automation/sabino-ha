@@ -11,7 +11,7 @@ import base64
 import pathlib
 
 HERE = pathlib.Path(__file__).parent
-VERSION = "1.0.1"
+VERSION = "1.1.0"
 
 # Same latin range Google Fonts serves; other scripts fall back to system fonts.
 UNICODE_RANGE = (

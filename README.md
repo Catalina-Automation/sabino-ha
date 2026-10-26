@@ -93,7 +93,7 @@ default font.
 1. Download [`sabino-fonts.js`](https://github.com/Catalina-Automation/sabino-ha/releases/latest/download/sabino-fonts.js)
    and put it in your config's `www/` folder, so it's at `/config/www/sabino-fonts.js`.
 2. **Settings › Dashboards › ⋮ › Resources › Add resource.** Enter the URL
-   `/local/sabino-fonts.js?v=1.0.1` and choose **JavaScript module**.
+   `/local/sabino-fonts.js?v=1.1.0` and choose **JavaScript module**.
 3. Reload the page. On the phone app, pull to refresh once.
 
 When a release updates the fonts, replace the file and change `?v=` to the new
