@@ -26,4 +26,5 @@ download. It also re-checks the fonts when the app comes back to the foreground.
 - `licenses/`: the SIL Open Font License for each family. The fonts are free to use
   and redistribute under it.
 - `build.py`: writes `sabino-fonts.js` from the four files. Bump `VERSION` first.
-- `sabino-fonts.js`: the built module, also attached to each GitHub release.
+- `sabino-fonts.js`: the built module. Don't attach it to GitHub releases: HACS installs a
+  release's attached files instead of the theme, and Sabino disappears.

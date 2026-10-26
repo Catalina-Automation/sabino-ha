@@ -90,7 +90,7 @@ The theme names its fonts but can't load them itself, so add them once as a
 dashboard resource. Skip this and everything still works, in Home Assistant's
 default font.
 
-1. Download [`sabino-fonts.js`](https://github.com/Catalina-Automation/sabino-ha/releases/latest/download/sabino-fonts.js)
+1. Download [`sabino-fonts.js`](https://github.com/Catalina-Automation/sabino-ha/raw/main/fonts/sabino-fonts.js)
    and put it in your config's `www/` folder, so it's at `/config/www/sabino-fonts.js`.
 2. **Settings › Dashboards › ⋮ › Resources › Add resource.** Enter the URL
    `/local/sabino-fonts.js?v=1.1.0` and choose **JavaScript module**.
