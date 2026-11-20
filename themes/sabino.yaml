@@ -5,6 +5,7 @@
 # mode follows the device light/dark setting.
 # Raw token NAMES are kept (clay/sage/agave/dusk/bloom/sand/ink) so existing
 # dashboard styles (var(--brand), var(--sand-200), ...) keep working.
+# Sonora additions (gold-*, on-glow-ink, ok-ink, tint-*, knob, logo-*) follow the semantic aliases in each mode.
 # Fonts are Newsreader / Hanken Grotesk / JetBrains Mono. The theme names them but does not load
 # them: add fonts/sabino-fonts.js as a dashboard resource (see README). A theme can only carry CSS
 # inside card-mod's shadow root, where Chromium ignores @font-face and @import.
@@ -104,6 +105,26 @@ Sabino:
       info: var(--dusk-500)
       on-glow: "#D4A24C"
       off-dim: var(--sand-400)
+
+      # ---- Sonora additions (design-system tokens; not read by HA itself) ----
+      # Gold ramp, ink on warm fills, badge tints, switch knob and logo colours,
+      # so dashboard styles can use the same names as the Sonora design system.
+      gold-100: "#F0DFBF"
+      gold-300: "#E8C988"
+      gold-500: "#D4A24C"
+      gold-600: "#B58235"
+      gold-700: "#8F6320"
+      on-glow-ink: "#0F1612"
+      ok-ink: var(--ok)
+      tint-clay: var(--clay-100)
+      tint-ok: "#DCE3DA"
+      tint-warn: "#F7F0DE"
+      tint-alert: "#F5E3DC"
+      tint-info: "#C0CFDD"
+      tint-neutral: var(--sand-200)
+      knob: var(--sand-50)
+      logo-body: var(--sage-500)
+      logo-sun: "#B85A3E"
 
       # ---- HA core variable mapping ----
       primary-color: var(--brand)
@@ -801,6 +822,26 @@ Sabino:
       info: var(--dusk-500)
       on-glow: "#B8904A"
       off-dim: var(--sand-400)
+
+      # ---- Sonora additions (design-system tokens; not read by HA itself) ----
+      # Gold ramp, ink on warm fills, badge tints, switch knob and logo colours,
+      # so dashboard styles can use the same names as the Sonora design system.
+      gold-100: "#F0DFBF"
+      gold-300: "#E8C988"
+      gold-500: "#D4A24C"
+      gold-600: "#B58235"
+      gold-700: "#8F6320"
+      on-glow-ink: "#14201A"
+      ok-ink: var(--sage-300)
+      tint-clay: var(--clay-100)
+      tint-ok: "#243A2D"
+      tint-warn: "#33241F"
+      tint-alert: "#33241F"
+      tint-info: "#243445"
+      tint-neutral: var(--sand-200)
+      knob: var(--ink-900)
+      logo-body: "#FBF6EC"
+      logo-sun: "#D4A24C"
 
       primary-color: var(--brand)
       accent-color: var(--brand)
